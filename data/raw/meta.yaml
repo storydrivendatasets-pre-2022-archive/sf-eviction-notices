@@ -1,0 +1,5 @@
+"sf-eviction-notices":
+  title: "San Francisco Eviction Notices"
+  fetched_at: 2018-06-28
+  urls:
+    original: "https://data.sfgov.org/api/views/5cei-gny5/rows.csv?accessType=DOWNLOAD"
