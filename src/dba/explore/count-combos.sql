@@ -18,8 +18,8 @@ SELECT
     || lead_remediation
     || development
     || good_samaritan_ends
-        AS combo_reason
+        AS reason_code
         , COUNT(*) AS r_count
 FROM notice
-GROUP BY combo_reason
+GROUP BY reason_code
 ORDER BY r_count DESC;

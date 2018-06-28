@@ -18,8 +18,8 @@ SELECT
     + lead_remediation
     + development
     + good_samaritan_ends
-        AS reason_sum
+        AS number_of_reasons
         , COUNT(*) AS r_count
 FROM notice
-GROUP BY reason_sum
+GROUP BY number_of_reasons
 ORDER BY r_count DESC;

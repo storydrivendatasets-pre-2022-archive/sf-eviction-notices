@@ -1,15 +1,16 @@
-DROP TABLE IF EXISTS "notice";
-CREATE TABLE notice (
+DROP TABLE IF EXISTS wrangled.notice;
+CREATE TABLE wrangled.notice (
     "eviction_id" TEXT,
-    "reason_count" INTEGER,
+    "file_date" TEXT,
+    "number_of_reasons" INTEGER,
+    "reason_code" TEXT,
     "address" TEXT,
     "zipcode" TEXT,
-    "file_date" TEXT,
     "constraints_date" TEXT,
     "supervisor_district" TEXT,
     "neighborhood" TEXT,
-    "longitude" DECIMAL,
     "latitude" DECIMAL,
+    "longitude" DECIMAL,
     "non_payment" INTEGER, -- boolean
     "breach" INTEGER, -- boolean
     "nuisance" INTEGER, -- boolean
@@ -28,5 +29,5 @@ CREATE TABLE notice (
     "late_payments" INTEGER, -- boolean
     "lead_remediation" INTEGER, -- boolean
     "development" INTEGER, -- boolean
-    "good_samaritan_ends" INTEGER, -- boolean
+    "good_samaritan_ends" INTEGER -- boolean
 );
