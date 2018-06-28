@@ -1,6 +1,6 @@
 # exclude data from source control by default
 /data/
-
+_drafts/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
