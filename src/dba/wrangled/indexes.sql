@@ -1,0 +1,2 @@
+-- Don't need to create any indexes for this dataset
+-- as we want to wrangle it first before querying it

@@ -1,11 +1,15 @@
 DROP TABLE IF EXISTS "notice";
 CREATE TABLE notice (
     "eviction_id" TEXT,
+    "reason_count" INTEGER,
     "address" TEXT,
-    "city" TEXT,
-    "state" TEXT,
     "zipcode" TEXT,
     "file_date" TEXT,
+    "constraints_date" TEXT,
+    "supervisor_district" TEXT,
+    "neighborhood" TEXT,
+    "longitude" DECIMAL,
+    "latitude" DECIMAL,
     "non_payment" INTEGER, -- boolean
     "breach" INTEGER, -- boolean
     "nuisance" INTEGER, -- boolean
@@ -25,8 +29,4 @@ CREATE TABLE notice (
     "lead_remediation" INTEGER, -- boolean
     "development" INTEGER, -- boolean
     "good_samaritan_ends" INTEGER, -- boolean
-    "constraints_date" TEXT,
-    "supervisor_district" TEXT,
-    "neighborhood" TEXT,
-    "coordinates" TEXT
 );

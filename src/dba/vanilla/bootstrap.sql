@@ -13,11 +13,11 @@ exit $?
 
 -- import the data
 .changes on
-.import ./data/raw/sf-eviction-notices.csv notice
+.import ./data/raw/sf-eviction-notices.pre-import-clean.csv notice
 
 -- index the data
 .read ./src/dba/vanilla/indexes.sql
 
 
 -- remove the repeated headers
-DELETE FROM notice WHERE "Eviction ID" = 'Eviction ID';
+DELETE FROM notice WHERE "eviction_id" = 'Eviction ID';
